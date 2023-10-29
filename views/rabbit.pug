@@ -4,10 +4,10 @@ block content
         h1= title
     - let results=[{rabbit_color:"brown",rabbit_breed:"Flemish Giant rabbit",rabbit_price:2000},{rabbit_color:"white",rabbit_breed:"Angora rabbit",rabbit_price:5500},{rabbit_color:"black",rabbit_breed:"Havana",rabbit_price:4000}]
         div(class="row")
-            each form,index in results
-                div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.rabbit_color}              
-                div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.rabbit_breed}                
-                div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.rabbit_price}
+            each form,item in results
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${item})`) #{form.rabbit_color}              
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${item})`) #{form.rabbit_breed}                
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${item})`) #{form.rabbit_price}
                 hr
     script.
         function buy(itemNo)
