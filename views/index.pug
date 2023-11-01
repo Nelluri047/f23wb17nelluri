@@ -3,9 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to Naga Manikanta farming in village.
-  button(type="button" class="btn btn-success") Press Me
+  button(type="button" class="btn btn-success" onclick="goFaster()") Press Me
   div#faster Increase the speed
-  button(type="button" class="btn btn-primary" onclick="goFaster()") Go Faster
+ 
   script. 
     let mph = 20;
     let change = 1;
